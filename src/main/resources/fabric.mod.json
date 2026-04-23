@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "cobwebtrap",
+  "version": "1.0.0",
+  "name": "CobwebTrap",
+  "description": "Predicts enemy knockback landing position and places a cobweb there instantly.",
+  "authors": ["You"],
+  "environment": "client",
+  "entrypoints": {
+    "main": ["com.cobwebtrap.CobwebTrapMod"],
+    "client": ["com.cobwebtrap.CobwebTrapClient"]
+  },
+  "mixins": ["cobwebtrap.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21"
+  }
+}
