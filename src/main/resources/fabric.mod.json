@@ -1,19 +1,27 @@
 {
   "schemaVersion": 1,
   "id": "cobwebtrap",
-  "version": "1.0.0",
-  "name": "CobwebTrap",
-  "description": "Predicts enemy knockback landing position and places a cobweb there instantly.",
-  "authors": ["You"],
-  "environment": "client",
+  "version": "${version}",
+  "name": "Cobweb Trap Mod",
+  "description": "Instantly places cobwebs on mobs/players when hit with a sword!",
+  "authors": ["greninja43434make"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
   "entrypoints": {
-    "main": ["com.cobwebtrap.CobwebTrapMod"],
-    "client": ["com.cobwebtrap.CobwebTrapClient"]
+    "main": [
+      "com.greninja.cobwebtrap.CobwebTrapMod"
+    ],
+    "client": [
+      "com.greninja.cobwebtrap.client.ClientInitializer"
+    ]
   },
-  "mixins": ["cobwebtrap.mixins.json"],
+  "mixins": [
+    "cobwebtrap.mixins.json"
+  ],
   "depends": {
     "fabricloader": ">=0.14.0",
-    "fabric-api": "*",
-    "minecraft": "~1.21"
+    "fabric": "*",
+    "minecraft": "~1.20.1"
   }
 }
